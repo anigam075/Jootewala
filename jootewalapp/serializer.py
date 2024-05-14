@@ -13,3 +13,10 @@ class UserProfileInsertSerializer(serializers.Serializer):
     Pincode = serializers.CharField(required=True )
     class Meta:
         fields = '__all__'
+
+
+class UserLoginSerializer(serializers.Serializer):
+    Email = serializers.CharField(required=True )
+    Password = serializers.CharField(required=True )
+    class Meta:
+        fields = '__all__'
